@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ambassador Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #1E2233;
+        color: #F2F2F2;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1E2233; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2E344D; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D9A441; 
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#1E2233', // Deep Midnight Blue
+                light: '#2E344D',
+              },
+              gold: {
+                DEFAULT: '#D9A441', // Warm Gold
+                light: '#E7C9A2', // Sand/Peach
+              },
+              secondary: {
+                lavender: '#756C87',
+                grey: '#A7A9B2',
+                forest: '#3F5B4C',
+                teal: '#5BA5A8',
+              },
+              accent: {
+                blue: '#7B8CCB',
+                purple: '#988ACF',
+              },
+              typography: {
+                white: '#F2F2F2',
+                grey: '#C8CBD3',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "d3": "https://aistudiocdn.com/d3@^7.9.0",
+    "topojson-client": "https://aistudiocdn.com/topojson-client@^3.1.0",
+    "geojson": "https://aistudiocdn.com/geojson@^0.5.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
